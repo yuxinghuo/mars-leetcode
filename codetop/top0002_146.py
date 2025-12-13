@@ -1,5 +1,4 @@
 import collections
-from multiprocessing.spawn import import_main_path
 
 
 class LRUCache:
@@ -35,7 +34,6 @@ class LRUCache(collections.OrderedDict):
     def __init__(self, capacity: int):
         super().__init__()
         self.capacity = capacity
-
 
     def get(self, key: int) -> int:
         if key not in self:
@@ -143,6 +141,8 @@ class LRUCache1:
         else:
             self.lst = [key] + self.lst[:-1]
 
+
+
 if __name__ == '__main__':
     lru = LRUCache1(2)
     lru.get(1)
@@ -153,4 +153,3 @@ if __name__ == '__main__':
     lru.put(1, 2)
     lru.get(1)
     lru.get(2)
-

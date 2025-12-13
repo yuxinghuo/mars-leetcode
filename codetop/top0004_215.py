@@ -1,10 +1,9 @@
+class Solution:
+    def findKthLargest(self, nums: list[int], k: int) -> int:
+        nums.sort(reverse=True)
+        return nums[k - 1]
 
 
-list = [['zhangsan', 30, 32000],
-['lisi', 25, 15000],
-['wangwu', 28, 30000],
-['wangwu1', 28, 20000],
-['awangwu1', 28, 10000],
-['zhaoliu', 21, 7000]]
-
-print(list)
+if __name__ == '__main__':
+    s = Solution()
+    print(s.findKthLargest([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 3))

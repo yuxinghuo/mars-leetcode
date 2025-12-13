@@ -16,7 +16,8 @@ class Solution:
         # write code here
         ret,path=[],[]
         def dfs(root:TreeNode,target:int):
-            if not root: return
+            if not root:
+                return
             path.append(root.val)
             target-=root.val
             if not root.left and not root.right and target==0:

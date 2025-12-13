@@ -3,7 +3,6 @@ import functools
 
 # 将给定的整数数组重新排列，使得将它们连接起来组成一个最小的数字
 
-
 class Solution:
     def PrintMinNumber(self, numbers: List[int]) -> str:
         lst = [str(i) for i in numbers]
